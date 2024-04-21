@@ -1,0 +1,29 @@
+@import "./base/variables.scss";
+@import "./base/base";
+@import "./base/typography.scss";
+
+.message-box {
+  box-shadow: rgba(246, 173, 28, 0.1) 0px 30px 5px 0px;
+}
+
+.cart-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .content-wrapper {
+    height: calc(100% - 148px);
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #797979;
+      border-radius: 1rem;
+    }
+  }
+
+  .summary {
+  }
+}
