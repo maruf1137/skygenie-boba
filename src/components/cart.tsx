@@ -1,6 +1,10 @@
 import React from "react";
 
-const Cart = ({ showCart }) => {
+interface CartProps {
+  showCart: boolean;
+}
+
+const Cart: React.FC<CartProps> = ({ showCart }) => {
   return (
     <div
       className={`${
